@@ -1,0 +1,257 @@
+:root{
+    --text-color: rgba(0, 0, 0, 0.836);
+    --text-main-color: rgb(255, 217, 0);
+    --text-emphasis-color: rgb(20, 20, 20);
+    --btn-color: rgb(59, 59, 59);
+    --btn-color-emphasis: rgb(19, 19, 19);
+}
+
+/* RESET BÁSICO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, ul, a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+header img{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    gap: 25px;
+}
+
+li a{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+li .lista:hover{
+    color: var(--text-emphasis-color);
+    text-decoration:2px underline solid red;
+    text-underline-offset:5px;
+}
+
+.icons-container i{
+    width: 3vw;
+    color: var(--text-color);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: fit-content;
+}
+
+.primary-text h3{
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.primary-text h1{
+    color: var(--text-main-color);
+    font-size: 3rem;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.secondary-text h2{
+    color: var(--text-emphasis-color);
+    margin-bottom: 10px;
+}
+
+.secondary-text p{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.btn-fan{
+    width: 80%;
+    height: 45px;
+    background-color: var(--btn-color);
+    border: none;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.btn-fan:hover{
+    transform: scale(1.03);
+    background-color: var(--btn-color-emphasis);
+}
+
+.secondary-content img{
+    height: 500px;
+    width: auto;
+}
+
+.secondary-content {
+    display: flex;
+    width: 200px;
+    align-items: center;  
+    justify-content: center;         
+}
+
+.homer-img img{
+    height: 500px;
+    width: auto;
+}
+
+.right-text{
+    transform: rotate(-90deg);
+    width: max-content;
+    font-weight: bold;
+    color: var(--text-main-color);     
+    align-self: center; 
+}
+
+.right-text h1{
+    font-size: 3rem;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 1px;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 3px solid black;
+    padding: 20px 40px;
+    background-color: yellow;
+}
+
+.social-container{
+    display: flex;
+    gap: 20px;
+}
+
+.social-container img{
+    height: 35px;
+    transition: 0.3s ease;
+}
+
+.social-container img:hover{
+    transform: scale(1.1);
+}
+
+.footer-text a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-emphasis-color);
+    transition: 0.3s ease;
+}
+
+.footer-text a:hover{
+    transform: translateX(5px);
+}
+
+.dropdown-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.dropdown-menu li{
+    width: 150px;
+    height: 50px;
+}
+
+
+.dropdown-menu .dropdown-list{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: all .2s linear;
+}
+
+.dropdown-menu li:hover > .dropdown-list{
+    background-color: #FBB023;
+    color: black;
+}
+
+.dropdown-menu li:hover > .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu{
+    margin-top: 1px;
+    display: none;
+}
+
+.dropdown-submenu .dropdown-list{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: .8rem;
+    border-left: 8px solid transparent;
+}
+
+.dropdown-submenu li:hover > a{
+    border-left: 8px solid rgb(255, 52, 52);
+}
+
+.right-element{
+    position: absolute;
+    right: 0%;
+    margin-top: 10px;
+    height: 85%;
+    width: 50px;
+    border-radius: 500% 0 0 500%;
+    background-color: rgba(255, 166, 0, 0.808); 
+    z-index: -1;
+}

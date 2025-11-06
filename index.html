@@ -15,56 +15,78 @@
         </div>
 
         <nav>
-            <ul>
+            <ul class="dropdown-menu">
                 <li>
-                    <a href="#">Home</a>
+                    <a class="lista" href="#">Home</a>
                 </li>
 
                 <li>
-                    <a href="#">Simpsons</a>
+                    <a class="lista" href="#">Simpsons</a>
+                    <ul class="dropdown-submenu">
+                        <li><a class="dropdown-list" href="#">Bart</a></li>
+                        <li><a class="dropdown-list" href="#">Marge</a></li>
+                        <li><a class="dropdown-list" href="#">Liza</a></li>
+                        <li><a class="dropdown-list" href="#">Maggie</a></li>
+                    </ul>
                 </li>
 
                 <li>
-                    <a href="#">Bart</a>
+                    <a class="lista" href="#">Bart</a>
+                    <ul class="dropdown-submenu">
+                        <li><a class="dropdown-list" href="#">a</a></li>
+                        <li><a class="dropdown-list" href="#">a</a></li>
+                        <li><a class="dropdown-list" href="#">a</a></li>
+                        <li><a class="dropdown-list" href="#">a</a></li>
+                    </ul>
                 </li>
 
                 <li>
-                    <a href="#">About</a>
+                    <a class="lista" href="#">About</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-border-all"></i>    
-            <i class="fa-solid fa-user"></i>      
+        <div class="icons-container">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-border-all"></i></a>    
+            <a href="#"><i class="fa-solid fa-user"></i></a>      
         </div>
     </header>
 
     <main>
-        <div class="main-text">
-            <h3> Simpsons Character </h3>
-            <h1>HOMER SIMPSON</h1>
-        </div>
+        
+        <section class="main-content">
+            <div class="primary-text">
+                <h3> Simpsons Character </h3>
+                <h1>HOMER SIMPSON</h1>
+            </div>
 
-        <div class="secondary-text">
-            <h2>Homer</h2>
-            <p>
+            <div class="secondary-text">
+                <h2>Homer</h2>
+                <p>
                 Homer Simpson is one of the main characters from the animated TV show The Simpsons. He is the father of the Simpson family and works at the Springfield Nuclear Power Plant. Homer is known for being lazy, clumsy, and loving donuts, beer, and watching TV. Even though he often makes mistakes, he deeply loves his family and tries his best to take care of them. His famous catchphrase is “D’oh!”
-            </p>
-        </div>
+                </p>
+            </div>
 
-        <button class="btn-fan">
-            Are you Simpsons fan?
-        </button>
+            <button class="btn-fan">
+                Are you Simpsons fan?
+            </button>
+        </section>
+        
+        <section class="secondary-content">
+            <div class="homer-img">
+                <img src="img/homer-img.png" alt="homer-img">
+            </div>
 
-        <div class="homer-img">
-            <img src="img/homer-img.png" alt="homer-img">
-        </div>
+            <div class="right-text">
+                <h1>Homer</h1>
+            </div>
 
-        <div class="right-text">
-            <h1>Homer Simpson</h1>
-        </div>
+            <div class="right-element"></div>
+        </section>
+
+        
+
     </main>
 
     <footer>
@@ -85,8 +107,8 @@
         </div>
 
         <div class="footer-text">
-            <h3>Next Simpsons Character</h3>
             <a href="#">
+                <h3>Next Simpsons Character</h3>
                 <i class="fa-solid fa-arrow-right"></i>  
             </a>
             
