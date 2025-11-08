@@ -130,11 +130,10 @@ main{
 
 .secondary-content {
     display: flex;
-    width: 200px;
+    width: 450px;
     align-items: center;  
     justify-content: center;         
 }
-
 
 .right-text{
     transform: rotate(-90deg);
@@ -148,7 +147,7 @@ main{
     font-size: 3rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 footer{
@@ -261,6 +260,10 @@ footer{
         height: 350px;
     }
 
+    .secondary-content{
+        width: 350px;
+    }
+
     .primary-text h1{
         font-size: 2rem;
     }
@@ -270,6 +273,6 @@ footer{
     }
 
     .right-text h1{
-        margin-bottom: -30px;
+        margin-bottom: 0px;
     }
 }
