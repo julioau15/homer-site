@@ -255,6 +255,43 @@ footer{
     z-index: -1;
 }
 
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#search-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+}
+
+#search-box.hidden {
+  display: inherit;
+}
+
+#suggestions {
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+}
+
+#suggestions li {
+  padding: 4px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background-color: #eee;
+}
+
 /* Laptop */
 @media screen and (max-width:1500px){
     .secondary-content img{

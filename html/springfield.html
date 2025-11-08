@@ -32,7 +32,7 @@
                 </li>
 
                 <li>
-                    <a class="lista" href="#">Springfield</a>
+                    <a class="lista" id="link" href="#">Springfield</a>
                     <ul class="dropdown-submenu">
                         <li><a class="dropdown-list" href="../html/moe.html">Moe's Tavern</a></li>
                         <li><a class="dropdown-list" href="../html/kwik.html">Kwik-E-Mart</a></li>
@@ -47,7 +47,18 @@
         </nav>
 
         <div class="icons-container">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="search-container">
+                <a id="search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <div id="search-box">
+                    <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Pesquisar página"
+                    >
+                    <ul id="suggestions"></ul>
+                </div>
+            </div>
+
             <a href="#"><i class="fa-solid fa-border-all"></i></a>    
             <a href="#"><i class="fa-solid fa-user"></i></a>      
         </div>
@@ -117,4 +128,5 @@ The school is run by the perpetually harassed Principal Seymour Skinner and over
         </div>
     </footer>
 </body>
+<script src="../javascript/script.js"></script>
 </html>
