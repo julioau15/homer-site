@@ -68,7 +68,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 120px;
+    padding: 0 80px;
     width: 100%;
     flex-grow: 1;
 }
@@ -83,12 +83,12 @@ main{
 
 .primary-text h3{
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .primary-text h1{
     color: var(--text-main-color);
-    font-size: 4rem;
+    font-size: 3rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 2px;
 }
@@ -124,17 +124,21 @@ main{
 }
 
 .secondary-content img{
-    height: 700px;
+    height: 800px;
     width: auto;
+    position: absolute; 
+    left: 50%;
+    top:50%;
+    transform: translate(50%, -50%);
 }
 
 .secondary-content {
     display: flex;
-    width: 200px;
+    width: 10px;
     align-items: center;  
-    justify-content: center;         
+    justify-content: center;  
+          
 }
-
 
 .right-text{
     transform: rotate(-90deg);
@@ -145,10 +149,10 @@ main{
 }
 
 .right-text h1{
-    font-size: 3rem;
+    font-size: 5rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 1px;
-    margin-bottom: 100px;
+    margin-bottom: -50px;
 }
 
 footer{
@@ -298,6 +302,13 @@ footer{
 @media screen and (max-width:1300px){
     .secondary-content img{
         height: 350px;
+        position: unset;
+        transform: translate(-0%, -0%);
+
+    }
+
+    .secondary-content{
+        width: 500px;
     }
 
     .primary-text h1{
@@ -309,12 +320,13 @@ footer{
     }
 
     .right-text h1{
-        margin-bottom: -30px;
+        font-size: 3rem;
+        margin-bottom: 0px;
     }
 }
 
 /* Tablet */
-@media screen and (max-width:1100px) {
+@media screen and (max-width:900px) {
 
     nav{
         padding: 0 10px;
@@ -338,27 +350,17 @@ footer{
     }
 
     .secondary-text p{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .secondary-content{
         width: 200px;
     }
 
-    .secondary-content img{
-        height: 420px;
-    }
-
     .btn-fan{
         font-size: 1.5rem;
         padding: 5px;
     }
-
-    .right-text h1{
-        margin-bottom: -60px;
-    }
-
-    
     
 }
 
@@ -473,5 +475,6 @@ footer{
     .footer-text{
         gap: 0;
     }
+
 
 }

@@ -299,7 +299,7 @@ footer{
 
 
 /* Laptop */
-@media screen and (max-width:1300px){
+@media screen and (max-width:1600px){
     .secondary-content img{
         height: 350px;
         position: unset;
@@ -308,7 +308,7 @@ footer{
     }
 
     .secondary-content{
-        width: 500px;
+        width: 370px;
     }
 
     .primary-text h1{
@@ -321,7 +321,7 @@ footer{
 
     .right-text h1{
         font-size: 3rem;
-        margin-bottom: 0px;
+        margin-bottom: -30px;
     }
 }
 
