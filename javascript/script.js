@@ -47,7 +47,7 @@ search.addEventListener('click', () => {
 
   function ajustarLink() {
     const link = document.getElementById("link");
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 700) {
       link.href = "../html/moe.html";
     } else {
       link.href = "#";

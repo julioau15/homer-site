@@ -100,10 +100,10 @@ main{
 
 .secondary-text p{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     text-align: justify;
-    max-width: 400px;
+    max-width: 800px;
     margin-bottom: 20px;
 }
 
@@ -124,15 +124,20 @@ main{
 }
 
 .secondary-content img{
-    height: 500px;
+    height: 800px;
     width: auto;
+    position: absolute; 
+    left: 50%;
+    top:50%;
+    transform: translate(50%, -50%);
 }
 
 .secondary-content {
     display: flex;
-    width: 200px;
+    width: 10px;
     align-items: center;  
-    justify-content: center;         
+    justify-content: center;  
+          
 }
 
 .right-text{
@@ -144,10 +149,10 @@ main{
 }
 
 .right-text h1{
-    font-size: 3rem;
+    font-size: 5rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 1px;
-    margin-bottom: 50px;
+    margin-bottom: -50px;
 }
 
 footer{
@@ -292,10 +297,18 @@ footer{
   background-color: #eee;
 }
 
+
 /* Laptop */
 @media screen and (max-width:1300px){
     .secondary-content img{
         height: 350px;
+        position: unset;
+        transform: translate(-0%, -0%);
+
+    }
+
+    .secondary-content{
+        width: 500px;
     }
 
     .primary-text h1{
@@ -307,7 +320,8 @@ footer{
     }
 
     .right-text h1{
-        margin-bottom: -30px;
+        font-size: 3rem;
+        margin-bottom: 0px;
     }
 }
 

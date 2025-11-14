@@ -68,7 +68,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 120px;
     width: 100%;
     flex-grow: 1;
 }
@@ -83,12 +83,12 @@ main{
 
 .primary-text h3{
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .primary-text h1{
     color: var(--text-main-color);
-    font-size: 3rem;
+    font-size: 4rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 2px;
 }
@@ -100,10 +100,10 @@ main{
 
 .secondary-text p{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     text-align: justify;
-    max-width: 400px;
+    max-width: 800px;
     margin-bottom: 20px;
 }
 
@@ -124,7 +124,7 @@ main{
 }
 
 .secondary-content img{
-    height: 500px;
+    height: 700px;
     width: auto;
 }
 
@@ -148,7 +148,7 @@ main{
     font-size: 3rem;
     -webkit-text-stroke-color:black;
     -webkit-text-stroke-width: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 footer{
@@ -314,7 +314,7 @@ footer{
 }
 
 /* Tablet */
-@media screen and (max-width:900px) {
+@media screen and (max-width:1100px) {
 
     nav{
         padding: 0 10px;
@@ -338,17 +338,27 @@ footer{
     }
 
     .secondary-text p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .secondary-content{
         width: 200px;
     }
 
+    .secondary-content img{
+        height: 420px;
+    }
+
     .btn-fan{
         font-size: 1.5rem;
         padding: 5px;
     }
+
+    .right-text h1{
+        margin-bottom: -60px;
+    }
+
+    
     
 }
 
@@ -463,6 +473,5 @@ footer{
     .footer-text{
         gap: 0;
     }
-
 
 }
